@@ -1,0 +1,76 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    height: 100vh;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.postTitle {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.postBody {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em
+}
+
+
+
+
+.postItem {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.postItem:hover {
+    font-weight: 900;
+}
+
+
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+
+}
+
+.page,
+.activePage {
+    animation: appear .5s forwards;
+    cursor: pointer;
+    padding: .2em .5em;
+    border: 1px dotted rgba(128, 128, 128, 0.294);
+    font-size: 2em;
+    transform: scaleX(0);
+}
+
+
+
+@keyframes appear {
+    to {
+        transform: scaleX(1)
+    }
+}
+
+.activePage {
+    color: aqua
+}
